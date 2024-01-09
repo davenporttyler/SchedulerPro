@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="459.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.tdavenportc195.AppointmentsModController">
+   <children>
+      <AnchorPane prefHeight="459.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="SaveModAptButton" layoutX="253.0" layoutY="409.0" mnemonicParsing="false" onAction="#OnSaveModAppointmentButtonClicked" prefHeight="36.0" prefWidth="125.0" text="Save Appointment" />
+            <Button fx:id="ModAptBackButton" layoutX="541.0" layoutY="420.0" mnemonicParsing="false" onAction="#OnAppointmentBackButtonClicked" text="Back" />
+            <Label layoutX="30.0" layoutY="25.0" />
+            <Label layoutX="15.0" layoutY="93.0" text="Appointment ID" />
+            <Label layoutX="14.0" layoutY="150.0" text="Appointment Type" />
+            <Label layoutX="15.0" layoutY="205.0" text="Appointment Title" />
+            <Label layoutX="48.0" layoutY="325.0" text="Start Time" />
+            <Label layoutX="9.0" layoutY="371.0" text="Appointment Date" />
+            <Label layoutX="204.0" layoutY="44.0" text="Appointment Description" />
+            <Label layoutX="298.0" layoutY="93.0" text="Appointment Customer" />
+            <Label layoutX="305.0" layoutY="168.0" text="Appointment User" />
+            <Label layoutX="296.0" layoutY="245.0" text="Appointment Contact" />
+            <Label layoutX="371.0" layoutY="329.0" text="End Time" />
+            <TextField fx:id="ModAptIDField" layoutX="129.0" layoutY="89.0" />
+            <TextField fx:id="ModAptTypeField" layoutX="129.0" layoutY="147.0" />
+            <TextField fx:id="ModAptTitleField" layoutX="129.0" layoutY="201.0" />
+            <TextField fx:id="ModAptDescriptionField" layoutX="352.0" layoutY="30.0" prefHeight="45.0" prefWidth="234.0" />
+            <Line endX="275.0" layoutX="307.0" layoutY="311.0" startX="-289.0" />
+            <ComboBox fx:id="ModAptContactCombo" layoutX="433.0" layoutY="241.0" onAction="#whenModContComboClicked" prefWidth="150.0" />
+            <ComboBox fx:id="ModAptStartCombo" layoutX="117.0" layoutY="321.0" prefHeight="25.0" prefWidth="174.0" />
+            <ComboBox fx:id="ModAptEndCombo" layoutX="434.0" layoutY="325.0" prefWidth="150.0" />
+            <DatePicker fx:id="ModAptDatePicker" layoutX="117.0" layoutY="367.0" />
+            <Label layoutX="373.0" layoutY="371.0" text="Location" />
+            <TextField fx:id="ModAptLocationField" layoutX="434.0" layoutY="367.0" />
+            <ComboBox fx:id="ModAptUserCombo" layoutX="434.0" layoutY="164.0" onAction="#whenModUserComboClicked" prefWidth="150.0" />
+            <ComboBox fx:id="ModAptCustomerCombo" layoutX="433.0" layoutY="89.0" onAction="#whenModCustComboClicked" prefWidth="150.0" />
+            <TextField fx:id="ModAptCustomerSet" editable="false" layoutX="436.0" layoutY="122.0" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: dddddd;" />
+            <TextField fx:id="ModAptUserSet" editable="false" layoutX="439.0" layoutY="201.0" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: dddddd;" />
+            <TextField fx:id="ModAptContactSet" editable="false" layoutX="440.0" layoutY="274.0" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: dddddd;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

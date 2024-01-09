@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="411.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.tdavenportc195.CustomersMainController">
+   <children>
+      <AnchorPane prefHeight="404.0" prefWidth="927.0">
+         <children>
+            <Button fx:id="AddCustButton" layoutX="50.0" layoutY="349.0" mnemonicParsing="false" onAction="#OnAddCustomerButtonClicked" text="Add Customer" />
+            <Button fx:id="CustMainHomeButton" layoutX="704.0" layoutY="362.0" mnemonicParsing="false" onAction="#OnHomeButtonClicked" text="Home" />
+            <Label layoutX="14.0" layoutY="14.0" />
+            <Button fx:id="ModCustButton" layoutX="170.0" layoutY="349.0" mnemonicParsing="false" onAction="#OnModCustButtonClicked" text="Modify Customer" />
+            <Button fx:id="SearchBtnCustMain" layoutX="612.0" layoutY="23.0" mnemonicParsing="false" text="Search" visible="false" />
+            <TextField fx:id="SearchBarCustMain" layoutX="688.0" layoutY="23.0" prefHeight="25.0" prefWidth="209.0" visible="false" />
+            <Button fx:id="DeleteCustButton" layoutX="314.0" layoutY="349.0" mnemonicParsing="false" onAction="#OnDeleteCustClicked" text="Delete Customer" />
+            <TableView fx:id="CustTableView" layoutX="12.0" layoutY="59.0" prefHeight="265.0" prefWidth="885.0">
+              <columns>
+                <TableColumn fx:id="CustIDCol" prefWidth="82.0" text="Customer ID" />
+                <TableColumn fx:id="CustNameCol" prefWidth="103.0" text="Customer Name" />
+                  <TableColumn fx:id="CustAddressCol" prefWidth="142.0" text="Address" />
+                  <TableColumn fx:id="CustPostalCol" prefWidth="89.0" text="Postal Code" />
+                  <TableColumn fx:id="CustDivisionCol" prefWidth="108.0" text="Division" />
+                  <TableColumn fx:id="CustCountryCol" prefWidth="90.0" text="Country" />
+                  <TableColumn fx:id="CustPhoneCol" prefWidth="190.0" text="Phone Number" />
+                  <TableColumn fx:id="CustDivisionIDCol" prefWidth="79.0" text="Division ID" />
+              </columns>
+            </TableView>
+            <Button fx:id="searchBtn" layoutX="556.0" layoutY="19.0" mnemonicParsing="false" onAction="#OnCustomerSearchButtonClicked" prefHeight="25.0" prefWidth="134.0" text="Search by Cust Name" />
+            <TextField fx:id="searchField" layoutX="695.0" layoutY="19.0" prefHeight="25.0" prefWidth="201.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

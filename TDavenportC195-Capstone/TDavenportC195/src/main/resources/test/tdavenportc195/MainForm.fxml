@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainForm" prefHeight="553.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.tdavenportc195.MainFormController">
+   <children>
+      <AnchorPane layoutX="3.0" prefHeight="553.0" prefWidth="415.0" style="-fx-border-color: Black; -fx-border-radius: 20; -fx-background-color: e6e6e6; -fx-background-radius: 20;">
+         <children>
+            <Button fx:id="ExitButtonMain" layoutX="336.0" layoutY="494.0" mnemonicParsing="false" onAction="#OnExitButtonMainClicked" prefHeight="43.0" prefWidth="62.0" style="-fx-border-color: black;" text="Exit" />
+            <Button fx:id="AppointmentsButtonMain" layoutX="51.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnAppointmentsButtonMainClicked" prefHeight="73.0" prefWidth="303.0" style="-fx-background-color: dddddd; -fx-border-color: black; -fx-border-radius: 8;" text="Appointments">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="CustomersButtonMain" layoutX="50.0" layoutY="294.0" mnemonicParsing="false" onAction="#OnCustomersButtonMainClicked" prefHeight="73.0" prefWidth="303.0" style="-fx-background-color: dddddd; -fx-border-color: black; -fx-border-radius: 8;" text="Customers">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="ReportsButtonMain" layoutX="50.0" layoutY="383.0" mnemonicParsing="false" onAction="#OnReportsButtonMainClicked" prefHeight="73.0" prefWidth="303.0" style="-fx-background-color: dddddd; -fx-border-color: black; -fx-border-radius: 8;" text="Reports">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="487.0" text="TDavenport C868 Capstone">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="513.0" text="SchedulerPro Application">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="4.0" layoutY="14.0" prefHeight="37.0" prefWidth="408.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-background-color: white;" text="Application Home Screen">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="27.0" layoutY="82.0" prefHeight="20.0" prefWidth="371.0" text="Appointments Starting Soon:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="AppointmentLabelMain" alignment="TOP_CENTER" layoutX="20.0" layoutY="105.0" prefHeight="73.0" prefWidth="381.0" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

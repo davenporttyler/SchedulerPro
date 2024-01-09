@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="775.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.tdavenportc195.ReportsMainController">
+   <children>
+      <AnchorPane prefHeight="754.0" prefWidth="1012.0">
+         <children>
+            <Label layoutX="24.0" layoutY="22.0" />
+            <Button fx:id="ReportsMainHomeButton" layoutX="945.0" layoutY="715.0" mnemonicParsing="false" onAction="#OnHomeButtonClicked" text="Home" />
+            <TableView fx:id="report3TableView" layoutX="24.0" layoutY="81.0" prefHeight="282.0" prefWidth="618.0">
+              <columns>
+                <TableColumn fx:id="countryNameColTab3" prefWidth="201.0" text="Country Name" />
+                  <TableColumn fx:id="divisionColTab3" prefWidth="225.0" text="Division" />
+                  <TableColumn fx:id="numberColTab3" prefWidth="191.0" text="Number of Customers" />
+              </columns>
+            </TableView>
+            <TableView fx:id="report1TableView" layoutX="653.0" layoutY="83.0" prefHeight="282.0" prefWidth="348.0">
+              <columns>
+                <TableColumn fx:id="typeColTab1" prefWidth="121.0" text="Type" />
+                <TableColumn fx:id="monthColTab1" prefWidth="76.0" text="Month" />
+                  <TableColumn fx:id="numberColTab1" prefWidth="150.0" text="Number of Appointments" />
+              </columns>
+            </TableView>
+            <TableView fx:id="report2TableView" layoutX="13.0" layoutY="403.0" prefHeight="295.0" prefWidth="985.0">
+               <columns>
+                  <TableColumn fx:id="contactIDColTab2" prefWidth="35.0" text="Contact ID" />
+                  <TableColumn fx:id="ContactNameColTab2" prefWidth="137.0" text="Contact Name" />
+                  <TableColumn fx:id="apptIDColTab2" prefWidth="37.0" text="Appointment ID" />
+                  <TableColumn fx:id="titleColTab2" prefWidth="112.0" text="Ttile" />
+                  <TableColumn fx:id="typeColTab2" prefWidth="126.0" text="Type" />
+                  <TableColumn fx:id="descColTab2" prefWidth="131.0" text="Description" />
+                  <TableColumn fx:id="startColTab2" prefWidth="108.0" text="Start" />
+                  <TableColumn fx:id="endColTab2" prefWidth="100.0" text="End" />
+                  <TableColumn fx:id="custIDColTab2" prefWidth="74.0" text="Customer ID" />
+                  <TableColumn fx:id="custNameColTab2" prefWidth="124.0" text="Customer Name" />
+               </columns>
+            </TableView>
+            <Label layoutX="104.0" layoutY="52.0" text="Report 3: Number of Customers We Serve By Division and Country">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="649.0" layoutY="50.0" text="Report 1: Number of Appointments by Type and Month" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="315.0" layoutY="377.0" text="Report 2: Schedule for Each Contact Ordered by Contact">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="463.0" layoutY="10.0" text="Reports Generated: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeStampLbl" layoutX="611.0" layoutY="10.0" prefHeight="25.0" prefWidth="165.0" text="Timestamp">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

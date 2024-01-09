@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="444.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.tdavenportc195.AppointmentsAddController">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="SaveAddAptButton" layoutX="261.0" layoutY="391.0" mnemonicParsing="false" onAction="#OnSaveAddAppointmentButtonClicked" prefHeight="34.0" prefWidth="191.0" text="Save Appointment" />
+            <Button fx:id="AddAptBackButton" layoutX="545.0" layoutY="408.0" mnemonicParsing="false" onAction="#OnAppointmentsBackButtonClicked" text="Back" />
+            <Label layoutX="23.0" layoutY="14.0" />
+            <Label layoutX="15.0" layoutY="93.0" text="Appointment ID" />
+            <Label layoutX="14.0" layoutY="150.0" text="Appointment Type" />
+            <Label layoutX="15.0" layoutY="205.0" text="Appointment Title" />
+            <Label layoutX="57.0" layoutY="288.0" text="Start Time" />
+            <Label layoutX="7.0" layoutY="341.0" text="Appointment Date" />
+            <Label layoutX="204.0" layoutY="44.0" text="Appointment Description" />
+            <Label layoutX="298.0" layoutY="93.0" text="Appointment Customer" />
+            <Label layoutX="298.0" layoutY="150.0" text="Appointment User" />
+            <Label layoutX="295.0" layoutY="205.0" text="Appointment Contact" />
+            <Label layoutX="366.0" layoutY="288.0" text="End Time" />
+            <TextField fx:id="AddAptIDField" layoutX="129.0" layoutY="89.0" />
+            <TextField fx:id="AddAptTypeField" layoutX="129.0" layoutY="147.0" />
+            <TextField fx:id="AddAptTitleField" layoutX="129.0" layoutY="201.0" />
+            <TextField fx:id="AddAptDescField" layoutX="352.0" layoutY="30.0" prefHeight="45.0" prefWidth="234.0" />
+            <Line endX="264.0" layoutX="311.0" layoutY="274.0" startX="-286.0" />
+            <ComboBox fx:id="AddAptContactCombo" layoutX="433.0" layoutY="201.0" onAction="#whenContactComboSelected" prefWidth="150.0" />
+            <ComboBox fx:id="AddAptStartTimeCombo" layoutX="129.0" layoutY="284.0" prefWidth="150.0" />
+            <ComboBox fx:id="AddAptEndTimeCombo" layoutX="433.0" layoutY="284.0" prefWidth="150.0" />
+            <DatePicker fx:id="AddAptStartDatePicker" layoutX="117.0" layoutY="337.0" />
+            <Label layoutX="368.0" layoutY="341.0" text="Location" />
+            <TextField fx:id="AddAptLocationField" layoutX="434.0" layoutY="337.0" />
+            <ComboBox fx:id="AddAptCustomerCombo" layoutX="433.0" layoutY="89.0" onAction="#whenCustomerComboSelected" prefWidth="150.0" />
+            <ComboBox fx:id="AddAptUserCombo" layoutX="433.0" layoutY="147.0" onAction="#whenUserComboSelected" prefWidth="150.0" />
+            <TextField fx:id="AddAptCustSet" editable="false" layoutX="436.0" layoutY="114.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: dddddd;" />
+            <TextField fx:id="AddAptUserSet" editable="false" layoutX="435.0" layoutY="172.0" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: dddddd;" />
+            <TextField fx:id="AddAptContactSet" editable="false" layoutX="435.0" layoutY="226.0" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: dddddd;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
